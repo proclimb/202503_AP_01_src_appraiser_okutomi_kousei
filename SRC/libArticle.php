@@ -19,12 +19,12 @@ function subArticle()
 	$orderTo = $_REQUEST['orderTo'];
 	$sPage   = $_REQUEST['sPage'];
 
-	if ($sDel = '') {
+	if ($sDel == '') {
 		$sDel = 1;
 	}
 
 	if (!$sPage) {
-		$sPage = l;
+		$sPage = 1;
 	}
 
 	if (!$orderBy) {
