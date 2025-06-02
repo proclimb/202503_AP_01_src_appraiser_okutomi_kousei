@@ -18,7 +18,7 @@ function fnSqlArticleList($flg, $sDel, $sArticle, $sRoom, $sKeyPlace, $sArticleN
 		$sql .= " AND ARTICLE LIKE '%$sArticle%'";
 	}
 	if ($sRoom) {
-		$sql .= " OR ROOM LIKE '%$sRoom%'";
+		$sql .= " AND ROOM LIKE '%$sRoom%'";
 	}
 	if ($sKeyPlace) {
 		$sql .= " OR KEYPLACE LIKE '%$sKeyPlace%'";
