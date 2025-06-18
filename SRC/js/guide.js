@@ -110,8 +110,7 @@ function fnGuideMove(muki, articleNo) {
 		tags += "<td>" + $(obj.children()[3]).html() + "</td>";
 
 		// 登録ボタンの作成
-		tags += "<td><input type=\"button\" value=\"&gt;\" /></td>";
-		tags += "</tr>";
+		tags += "<td><input type=\"button\" value=\"&gt;\" onClick=\"fnGuideMove( 'toRight', '" + articleNo + "' );\" /></td>"; tags += "</tr>";
 
 		// 検索側に追加
 		$("#search").append(tags);
