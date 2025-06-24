@@ -487,7 +487,7 @@ function subFManagerViewEdit()
 			<input type="hidden" name="fMNo" value="<?php print $fMNo; ?>" />
 			<input type="hidden" name="pdfNo" value="<?php print $pdfNo; ?>" />
 			<input type="hidden" name="docNo" value="<?php print $docNo; ?>" />
-			<input type="hidden" name="sClassNo" value="<?php print $sClassNo ?>" /> // ← 追加
+			<input type="hidden" name="sClassNo" value="<?php print $sClassNo ?>" />
 
 			<table border="0" cellpadding="5" cellspacing="1">
 				<tr>
