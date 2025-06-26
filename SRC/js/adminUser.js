@@ -41,10 +41,11 @@ function fnAdminUserEditCheck() {
 
 
 
-function fnAdminUserDeleteCheck(no, nm) {
-	if (confirm('「' + nm + '」を削除します。よろしいですか？')) {
-		form.userNo.value = no;
-		form.act.value = 'adminUserDelete';
+function fnAdminUserDeleteCheck(userNo, name) {
+	if (confirm(name + " を削除してよろしいですか？")) {
+		const form = document.getElementById("form");
+		form.act.value = "adminUserDelete";
+		form.userNo.value = userNo;
 		form.submit();
 	}
 }

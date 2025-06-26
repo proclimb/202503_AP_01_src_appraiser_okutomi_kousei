@@ -47,7 +47,6 @@ function subAdminUser()
 								<a href="javascript:fnAdminUserDeleteCheck(<?php print $userNo; ?>,'<?php print $name; ?>');">削除</a>
 							<?php } ?>
 						</td>
-						</td>
 					</tr>
 				<?php
 					$i = ($i + 1) % 2;
